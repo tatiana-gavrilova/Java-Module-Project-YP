@@ -22,16 +22,14 @@ public class Main {
             }
         }
 
-        double sum= calculate.calc();
-
+        double sum= calculate.calcPosition();
         System.out.println(calculate.menu);
 
         double totalsum = sum/totalPeople   ;
-                       System.out.println(formatter.n2f(totalsum)+" "+formatter.n2r(totalsum));
+                       System.out.println("Общая сумма:"+ formatter.number2format(sum)+" "+formatter.number2rub(sum));
+                       System.out.println("Всего людей: "+totalPeople+" На каждого: "+formatter.number2format(totalsum)+" "+formatter.number2rub(totalsum));
                        scanner. close();
-
     }
-
 }
 
 

@@ -1,5 +1,5 @@
 public class Formatter {
-    String n2r (double sum){
+    String number2rub (double sum){
         sum=Math.floor(sum);
         String c="";
         if (sum<10){
@@ -22,7 +22,7 @@ public class Formatter {
             }
         return c;
     }
-    String n2f (double sum){
+    String number2format (double sum){
         return String.format("%,.2f", sum).replace(',', '.');
     }
 }
